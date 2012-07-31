@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class  NumberClass;
 
 @interface ViewController : UIViewController
 {
     UILabel *textLabel;
+    
+    NumberClass *numberClass;
 }
+
+-(NSString*)getText;
+
 @end
