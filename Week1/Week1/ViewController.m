@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NumberClass.h"
+#import "TextClass.h"
 
 @interface ViewController ()
 
@@ -17,23 +17,20 @@
 
 - (void)viewDidLoad
 {
-    numberClass = [[NumberClass alloc] init];
-    if (numberClass != nil)
+    textClass = [[TextClass alloc] init];
+    if (textClass != nil)
     {
-        
+        //  Call a method that TextClass defines
     }
     textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
-    textLabel.text = [self.getText];
+    textLabel.text = [textClass getText];
     [self.view addSubview:textLabel];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
--(NSString*)getText
-{
-    return @"hello";
-}
+
 
 - (void)viewDidUnload
 {

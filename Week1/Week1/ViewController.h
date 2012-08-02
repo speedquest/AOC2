@@ -7,15 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-@class  NumberClass;
+@class  TextClass;  // Forward Declaration - used in place of importing the header
 
 @interface ViewController : UIViewController
 {
     UILabel *textLabel;
     
-    NumberClass *numberClass;
+    TextClass *textClass;
 }
 
--(NSString*)getText;
 
 @end

@@ -10,12 +10,12 @@
 
 @interface NumberClass : NSObject
 {
-    NSString *text;
+    NSString *textVariable;
     
     int intVariable;
     
     float floatVariable;
 }
 
--(NSSTring*)
+
 @end
