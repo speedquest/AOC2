@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-@class  TextClass;  // Forward Declaration - used in place of importing the header
+#import "DragonFactory.h"
+#import "BaseDragons.h"
+#import "RedDragon.h"
+#import "GoldDragon.h"
+#import "BlackDragon.h"
+
 
 @interface ViewController : UIViewController
 {
@@ -17,6 +22,7 @@
     UILabel *partition4;
     UILabel *partition5;
     UILabel *partition6;
+    UILabel *bottomLabel;
 }
 
 

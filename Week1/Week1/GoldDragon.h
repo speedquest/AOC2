@@ -6,9 +6,14 @@
 //  Copyright (c) 2012 SpeedQuest. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "BaseDragons.h"
+#import <Foundation/Foundation.h>
+#import "BaseDragons.h"  //  RedDragons can't inherit if the BaseDragons is not imported
 
 @interface GoldDragon : BaseDragons
+
+-(NSString*)getDragonByName;
+-(int)getDragonHeadCount;
+-(float)getDragonHeadWeight;
+-(float)getTotalDragonHeadWeight;
 
 @end

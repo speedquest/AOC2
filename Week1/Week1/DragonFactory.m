@@ -7,8 +7,10 @@
 //
 
 #import "DragonFactory.h"
+#import "BaseDragons.h"
 
 @implementation DragonFactory
+
 +(BaseDragons*)GetDragon:(int)dragonType
 {
     if (dragonType == 0)
