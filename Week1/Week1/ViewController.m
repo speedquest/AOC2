@@ -31,21 +31,20 @@
     partition1.font = [UIFont fontWithName:@"Arial" size:14];
 
     [self.view addSubview:partition1];
-    
+//  Accessing the data
     RedDragon *redDragonText = (RedDragon*) [DragonFactory GetDragon:0];
     [redDragonText getDragonByName];
     [redDragonText getDragonHeadCount];
     [redDragonText getDragonHeadWeight];
     [redDragonText getDragonWeight];
-    
+//  Displaying the data after retrieving it
     partition1.text = [NSString stringWithFormat:@"%@ has %d heads.Each head is %.1f#s. His heads total: %.1f#s. He weighs %.1fK#s total.",
             [redDragonText getDragonByName],
             [redDragonText getDragonHeadCount],
             [redDragonText getDragonHeadWeight],
             [redDragonText getTotalDragonHeadWeight],
             [redDragonText getDragonWeight]];
-    
-    
+        
 // Dragon #1 SubClass MUTATOR/SETTER
     partition2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 85, 320, 50)];
     partition2.backgroundColor = [UIColor colorWithRed:0.992 green:0.635 blue:0.027 alpha:1] /*#fda207*/;
@@ -53,12 +52,12 @@
     partition2.textAlignment = UITextAlignmentCenter;
     partition2.font = [UIFont fontWithName:@"Arial" size:14];
     [self.view addSubview:partition2];
-  
+//  THE MUTATOR IS CALLED!
     RedDragon *redDragonText2 = (RedDragon*) [DragonFactory GetDragon:dragonType_Red];
     [redDragonText2 getDragonByName];
     [redDragonText2 setHeadCount:3];
     [redDragonText2 setTotalDragonHeadWeight:200.0f];
-
+//  Displaying the data after modifying it
     partition2.text = [NSString stringWithFormat:@"%@ was in a battle and lost heads.He now has %d heads left. His heads now total %.1f.",
         [redDragonText2 getDragonByName],
         [redDragonText2 getDragonHeadCount],
@@ -142,7 +141,7 @@
        [blackDragonText2 getDragonByName],
        [blackDragonText2 getDragonHeadCount],
        [blackDragonText2 getTotalDragonHeadWeight]];
-
+//  FOOTER!
     bottomLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 435, 320, 20)];
     bottomLabel.backgroundColor = [UIColor clearColor];
     bottomLabel.textColor = [UIColor yellowColor];
