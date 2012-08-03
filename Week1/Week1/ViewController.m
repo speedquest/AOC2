@@ -7,7 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "TextClass.h"
+#import "DragonFactory.h"
+#import "BaseDragons.h"
+#import "RedDragon.h"
+#import "GoldDragon.h"
+#import "BlackDragon.h"
 
 @interface ViewController ()
 
@@ -17,14 +21,9 @@
 
 - (void)viewDidLoad
 {
-    textClass = [[TextClass alloc] init];
-    if (textClass != nil)
-    {
-        //  Call a method that TextClass defines
-    }
-    textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
-    textLabel.text = [textClass getText];
-    [self.view addSubview:textLabel];
+    self.view.backgroundColor = [UIColor grayColor];
+    
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

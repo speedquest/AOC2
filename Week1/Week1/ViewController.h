@@ -11,9 +11,12 @@
 
 @interface ViewController : UIViewController
 {
-    UILabel *textLabel;
-    
-    TextClass *textClass;
+    UILabel *partition1;
+    UILabel *partition2;
+    UILabel *partition3;
+    UILabel *partition4;
+    UILabel *partition5;
+    UILabel *partition6;
 }
 
 
