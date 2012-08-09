@@ -20,7 +20,7 @@
 @property double operand;
 
 
-//This will perform an operation
+//This will perform an operation (+ - / *)
 -(double)performOperation:(NSString *)operation;
 
 

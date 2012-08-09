@@ -16,10 +16,15 @@
     IBOutlet UILabel *display;
     MainBrain *brain;
     BOOL userIsInTheMiddleOfTypingANumber;
+    IBOutlet UISwitch *powerSwitch;
+    IBOutlet UISegmentedControl *bgSwitch;
+    
 }
 
-- (IBAction)numberPressed:(UIButton *)sender;
-- (IBAction)operationPressed:(UIButton *)sender;
-
+- (IBAction)numberPressed:(UIButton *)sender;  //  Numbers
+- (IBAction)operationPressed:(UIButton *)sender;  // Operators
+- (IBAction)switchOn:(id)sender;  // Power Switch
+- (IBAction)backgroundToggle:(id)sender;  // Background toggle
+- (IBAction)infoPage:(id)sender;  //  Information Page
 
 @end

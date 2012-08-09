@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4C17F2415D461A50088711C /* bg_cherry_320.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C17F2315D461A50088711C /* bg_cherry_320.png */; };
+		A4C17F2615D464D10088711C /* Woodgrain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4C17F2515D464D10088711C /* Woodgrain.jpg */; };
+		A4C17F2815D4660B0088711C /* bamboo.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C17F2715D4660B0088711C /* bamboo.png */; };
+		A4C17F2A15D471DA0088711C /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4C17F2915D471DA0088711C /* SecondView.xib */; };
+		A4C17F2D15D478C00088711C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C17F2C15D478C00088711C /* SecondViewController.m */; };
 		A4FA88C515D31A5300A6D789 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FA88C415D31A5300A6D789 /* UIKit.framework */; };
 		A4FA88C715D31A5300A6D789 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FA88C615D31A5300A6D789 /* Foundation.framework */; };
 		A4FA88C915D31A5300A6D789 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FA88C815D31A5300A6D789 /* CoreGraphics.framework */; };
@@ -17,11 +22,16 @@
 		A4FA88DB15D31A5300A6D789 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FA88D915D31A5300A6D789 /* ViewController_iPhone.xib */; };
 		A4FA88DE15D31A5300A6D789 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FA88DC15D31A5300A6D789 /* ViewController_iPad.xib */; };
 		A4FA88E615D31B9000A6D789 /* Button_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FA88E415D31B9000A6D789 /* Button_1.png */; };
-		A4FA88E715D31B9000A6D789 /* Woodgrain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4FA88E515D31B9000A6D789 /* Woodgrain.jpg */; };
 		A4FA88F215D3354B00A6D789 /* MainBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FA88F115D3354B00A6D789 /* MainBrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4C17F2315D461A50088711C /* bg_cherry_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_cherry_320.png; sourceTree = "<group>"; };
+		A4C17F2515D464D10088711C /* Woodgrain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Woodgrain.jpg; path = ../../../../../../../../.Trash/images/Woodgrain.jpg; sourceTree = "<group>"; };
+		A4C17F2715D4660B0088711C /* bamboo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bamboo.png; sourceTree = "<group>"; };
+		A4C17F2915D471DA0088711C /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
+		A4C17F2B15D478C00088711C /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		A4C17F2C15D478C00088711C /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		A4FA88C015D31A5300A6D789 /* Week2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FA88C415D31A5300A6D789 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4FA88C615D31A5300A6D789 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,7 +47,6 @@
 		A4FA88DA15D31A5300A6D789 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		A4FA88DD15D31A5300A6D789 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		A4FA88E415D31B9000A6D789 /* Button_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_1.png; sourceTree = "<group>"; };
-		A4FA88E515D31B9000A6D789 /* Woodgrain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Woodgrain.jpg; sourceTree = "<group>"; };
 		A4FA88F015D3354B00A6D789 /* MainBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBrain.h; sourceTree = "<group>"; };
 		A4FA88F115D3354B00A6D789 /* MainBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,13 +95,18 @@
 		A4FA88CA15D31A5300A6D789 /* Week2 */ = {
 			isa = PBXGroup;
 			children = (
+				A4C17F2715D4660B0088711C /* bamboo.png */,
+				A4C17F2315D461A50088711C /* bg_cherry_320.png */,
+				A4C17F2515D464D10088711C /* Woodgrain.jpg */,
 				A4FA88E415D31B9000A6D789 /* Button_1.png */,
-				A4FA88E515D31B9000A6D789 /* Woodgrain.jpg */,
 				A4FA88D315D31A5300A6D789 /* AppDelegate.h */,
 				A4FA88D415D31A5300A6D789 /* AppDelegate.m */,
 				A4FA88D615D31A5300A6D789 /* ViewController.h */,
 				A4FA88D715D31A5300A6D789 /* ViewController.m */,
 				A4FA88D915D31A5300A6D789 /* ViewController_iPhone.xib */,
+				A4C17F2B15D478C00088711C /* SecondViewController.h */,
+				A4C17F2C15D478C00088711C /* SecondViewController.m */,
+				A4C17F2915D471DA0088711C /* SecondView.xib */,
 				A4FA88DC15D31A5300A6D789 /* ViewController_iPad.xib */,
 				A4FA88CB15D31A5300A6D789 /* Supporting Files */,
 				A4FA88F015D3354B00A6D789 /* MainBrain.h */,
@@ -167,7 +181,10 @@
 				A4FA88DB15D31A5300A6D789 /* ViewController_iPhone.xib in Resources */,
 				A4FA88DE15D31A5300A6D789 /* ViewController_iPad.xib in Resources */,
 				A4FA88E615D31B9000A6D789 /* Button_1.png in Resources */,
-				A4FA88E715D31B9000A6D789 /* Woodgrain.jpg in Resources */,
+				A4C17F2415D461A50088711C /* bg_cherry_320.png in Resources */,
+				A4C17F2615D464D10088711C /* Woodgrain.jpg in Resources */,
+				A4C17F2815D4660B0088711C /* bamboo.png in Resources */,
+				A4C17F2A15D471DA0088711C /* SecondView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +199,7 @@
 				A4FA88D515D31A5300A6D789 /* AppDelegate.m in Sources */,
 				A4FA88D815D31A5300A6D789 /* ViewController.m in Sources */,
 				A4FA88F215D3354B00A6D789 /* MainBrain.m in Sources */,
+				A4C17F2D15D478C00088711C /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +325,7 @@
 				A4FA88E315D31A5300A6D789 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
