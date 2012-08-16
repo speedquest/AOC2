@@ -7,13 +7,29 @@
 //
 
 #import "ViewController.h"
-#import "SecondViewController.h"  //  Import the header file from SecondViewController
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+//  When the 'ADD EVENT' button is clicked, animate to the second view
+-(IBAction)onClick:(id)sender
+{
+    SecondViewController *viewController = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    if (viewController != nil)
+    {
+        viewController.delegate = self;
+        [self presentModalViewController:viewController animated:true];
+    }
+}
+
+-(void)setToDo:(NSString *)theToDoString
+{
+    toDoList.text = [toDoList.text stringByAppendingString:theToDoString];  //  Appending the string of the date
+    NSLog(@"the event is %@", toDoList.text);       //  Set up to test the dates being loaded.
+}
 
 - (void)viewDidLoad
 {
@@ -36,13 +52,7 @@
     }
 }
 
-//  When the 'ADD EVENT' button is clicked, animate to the second view
--(IBAction)onClick:(id)sender
-{
-    SecondViewController *viewController = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-    if (viewController != nil)
-    {
-        [self presentModalViewController:viewController animated:true];
-    }
-}
+
+
+
 @end

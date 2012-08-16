@@ -14,6 +14,7 @@
 
 @implementation SecondViewController
 
+@synthesize delegate, datePicker;  //  Synthesizes the variables to avoid conflicts
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -55,12 +56,25 @@
     //  This will operate the 'SAVE' function when the button is clicked
 -(IBAction)saveButton:(id)sender
 {
-    if ([toDoName.text length] > 0)     //  Check to make sure text field contains anything
+    if ([toDoTextField.text length] > 0)        //  Check to make sure text field contains anything
     {
-        
-        
+        NSDate *choice = [datePicker date];     //  Sets the choice variable to the date selected with the picker
+        if (choice != nil)                      //  If the choice exists then do this
+        {
+            NSDateFormatter *makeDate = [[NSDateFormatter alloc] init]; //  Assign makeDate and then  format it accordingly
+                if (makeDate != nil)
+                {
+                    [makeDate setDateFormat:@"MMMM dd, h:mm a"];
+                }
+                textOfDate = [makeDate stringFromDate:choice];
+        }
         //  Animate to the Main Screen
         [self dismissModalViewControllerAnimated:true];
+        if (delegate != nil)
+        {
+             newToDo= [NSString stringWithFormat:@"%@ \n%@ \n \n", toDoTextField.text, textOfDate];
+            [delegate setToDo:newToDo];
+        }
     }
     else        //  ALERT if no text is in Event Field
     {
@@ -72,14 +86,16 @@
     //  This will close the keyboard when the button is presed
 -(IBAction)keyboardClose:(id)sender
 {
-    [toDoName resignFirstResponder];  //  Releases the keyboard from the view
+    [toDoTextField resignFirstResponder];  //  Releases the keyboard from the view
 }
 
--(IBAction)saveDate:(id)sender
+
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)theToDoTextField
 {
-    
+    theToDoTextField.text = @"";
+    return YES;
 }
-
 
 - (void)viewDidUnload
 {

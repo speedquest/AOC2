@@ -7,16 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SecondViewController.h"  //  Import the header file from SecondViewController
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController <saveEventText>
+
 {
     //  This will display the list of events
     IBOutlet UITextView *toDoList;
     
-    //  Listening for the 'ADD EVENT' button to be clicked
-    IBOutlet UIButton *addToDo;
 }
 
+//  Listening for the 'ADD EVENT' button to be clicked
 -(IBAction)onClick:(id)sender;
 
 @end
