@@ -14,7 +14,8 @@
 
 @implementation ViewController
 
-//  When the 'ADD EVENT' button is clicked, animate to the second view
+/*  REMOVED FOR WEEK 4
+ //  When the 'ADD EVENT' button is clicked, animate to the second view
 -(IBAction)onClick:(id)sender
 {
     SecondViewController *viewController = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
@@ -24,6 +25,8 @@
         [self presentModalViewController:viewController animated:true];
     }
 }
+*/
+
 
 -(void)setToDo:(NSString *)theToDoString
 {
@@ -33,10 +36,40 @@
 
 - (void)viewDidLoad
 {
+    //  Establishing the rightSwiper
+    rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe: )];
+    rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
+    [swipeLabel addGestureRecognizer:rightSwiper];
+    
+    //  Establishing the leftSwiper
+    leftSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe: )];
+    leftSwiper.direction = UISwipeGestureRecognizerDirectionLeft;
+    [swipeLabel addGestureRecognizer:leftSwiper];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+//  This will determine whether the swipe was LEFT or Right
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+    if (recognizer.direction = UISwipeGestureRecognizerDirectionRight)
+    {
+        SecondViewController *viewController = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+        if (viewController != nil)
+        {
+            viewController.delegate = self;
+            [self presentModalViewController:viewController animated:true];
+        }
+
+    }
+    //  Broken swipe error message
+     else if (recognizer.direction = UISwipeGestureRecognizerDirectionLeft)
+    {
+        swipeAlert = [[UIAlertView alloc] initWithTitle:@"ALERT" message:@"Please swipe to Right" delegate:self cancelButtonTitle:@"Continue" otherButtonTitles:nil, nil];
+        [swipeAlert show];
+    }    
+}
 - (void)viewDidUnload
 {
     [super viewDidUnload];
