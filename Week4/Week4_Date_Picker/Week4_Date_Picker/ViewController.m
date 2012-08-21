@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  Week3_Date_Picker
+//  Week4_Date_Picker
 //
-//  Created by Nicholas Weil on 8/14/12.
+//  Created by Nicholas Weil on 8/21/12.
 //  Copyright (c) 2012 Nicholas Weil. All rights reserved.
 //
 
