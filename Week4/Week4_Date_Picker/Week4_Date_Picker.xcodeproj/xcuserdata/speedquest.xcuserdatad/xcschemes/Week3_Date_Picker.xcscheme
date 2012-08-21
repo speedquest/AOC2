@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A4ECBE3615DAE3BB00C57746"
-               BuildableName = "Week3_Date_Picker.app"
+               BuildableName = "Week4_Date_Picker.app"
                BlueprintName = "Week4_Date_Picker"
                ReferencedContainer = "container:Week4_Date_Picker.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4ECBE3615DAE3BB00C57746"
-            BuildableName = "Week3_Date_Picker.app"
+            BuildableName = "Week4_Date_Picker.app"
             BlueprintName = "Week4_Date_Picker"
             ReferencedContainer = "container:Week4_Date_Picker.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4ECBE3615DAE3BB00C57746"
-            BuildableName = "Week3_Date_Picker.app"
+            BuildableName = "Week4_Date_Picker.app"
             BlueprintName = "Week4_Date_Picker"
             ReferencedContainer = "container:Week4_Date_Picker.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4ECBE3615DAE3BB00C57746"
-            BuildableName = "Week3_Date_Picker.app"
+            BuildableName = "Week4_Date_Picker.app"
             BlueprintName = "Week4_Date_Picker"
             ReferencedContainer = "container:Week4_Date_Picker.xcodeproj">
          </BuildableReference>
