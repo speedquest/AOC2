@@ -53,7 +53,8 @@
 {
     
 }
-    //  This will operate the 'SAVE' function when the button is clicked
+/*  REMOVED FOR WEEK 4
+ //  This will operate the 'SAVE' function when the button is clicked
 -(IBAction)saveButton:(id)sender
 {
     if ([toDoTextField.text length] > 0)        //  Check to make sure text field contains anything
@@ -82,6 +83,8 @@
         [alert show];
     }
 }
+ 
+ */
 
     //  This will close the keyboard when the button is presed
 -(IBAction)keyboardClose:(id)sender

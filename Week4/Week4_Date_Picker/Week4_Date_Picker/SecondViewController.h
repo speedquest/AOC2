@@ -30,11 +30,13 @@
     
 }
 
-@property(nonatomic,retain) NSDate *minimumDate;  //  The minimum DATE for the Date Picker
+@property(nonatomic,strong) NSDate *minimumDate;  //  The minimum DATE for the Date Picker
 @property (strong) id<saveEventText> delegate;
-@property (nonatomic, retain)IBOutlet UIDatePicker *datePicker;
+@property (nonatomic, strong)IBOutlet UIDatePicker *datePicker;
 
--(IBAction)saveButton:(id)sender;           //  The SAVE Button 
+/*  Removed for WEEK 4
+ -(IBAction)saveButton:(id)sender;           //  The SAVE Button
+*/
 -(IBAction)keyboardClose:(id)sender;        //  The Close Keyboard button
 
 @end

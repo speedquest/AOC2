@@ -265,6 +265,7 @@
 		A4ECBE5915DAE3BB00C57746 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Week4_Date_Picker/Week4_Date_Picker-Prefix.pch";
 				INFOPLIST_FILE = "Week4_Date_Picker/Week4_Date_Picker-Info.plist";
@@ -276,6 +277,7 @@
 		A4ECBE5A15DAE3BB00C57746 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Week4_Date_Picker/Week4_Date_Picker-Prefix.pch";
 				INFOPLIST_FILE = "Week4_Date_Picker/Week4_Date_Picker-Info.plist";

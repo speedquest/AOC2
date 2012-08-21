@@ -53,7 +53,7 @@
 //  This will determine whether the swipe was LEFT or Right
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
-    if (recognizer.direction = UISwipeGestureRecognizerDirectionRight)
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
     {
         SecondViewController *viewController = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
         if (viewController != nil)
@@ -64,9 +64,9 @@
 
     }
     //  Broken swipe error message
-     else if (recognizer.direction = UISwipeGestureRecognizerDirectionLeft)
+     else if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft)
     {
-        swipeAlert = [[UIAlertView alloc] initWithTitle:@"ALERT" message:@"Please swipe to Right" delegate:self cancelButtonTitle:@"Continue" otherButtonTitles:nil, nil];
+        swipeAlert = [[UIAlertView alloc] initWithTitle:@"Sorry..." message:@"Please swipe to the Right" delegate:self cancelButtonTitle:@"Continue" otherButtonTitles:nil, nil];
         [swipeAlert show];
     }    
 }
