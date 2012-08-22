@@ -27,6 +27,8 @@
 }
 */
 
+
+//  Appending the list of Events by adding the most recent stuff (outputs to NSLog to check)
 -(void)setToDo:(NSString *)theToDoString
 {
     toDoList.text = [toDoList.text stringByAppendingString:theToDoString];  //  Appending the string of the date
@@ -46,6 +48,7 @@
     leftSwiper.direction = UISwipeGestureRecognizerDirectionLeft;
     [swipeLabel addGestureRecognizer:leftSwiper];
     
+    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if (defaults != nil)
     {
@@ -57,6 +60,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+
+//  When the SAVE BUTTON is clicked update the list and save it to the file
 -(IBAction)onSaveEvent:(id)sender
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

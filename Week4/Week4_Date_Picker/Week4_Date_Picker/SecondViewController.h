@@ -32,8 +32,9 @@
     //  The Label for the Swipe
     IBOutlet UILabel *secondSwipeLabel;
     
-    UISwipeGestureRecognizer *secondRightSwiper;
-    UISwipeGestureRecognizer *secondLeftSwiper;
+    //  Establishing the swipe recognizers
+    UISwipeGestureRecognizer *secondRightSwiper;  //  Right Swipe
+    UISwipeGestureRecognizer *secondLeftSwiper;   //  Left Swipe
     UIAlertView *secondSwipeAlert;            //  The 'ALERT' when the wrong swipe is used
 
 }
@@ -42,9 +43,7 @@
 @property (strong) id<saveEventText> delegate;
 @property (nonatomic, strong)IBOutlet UIDatePicker *datePicker;
 
-/*  Removed for WEEK 4
- -(IBAction)saveButton:(id)sender;           //  The SAVE Button
-*/
+
 -(IBAction)keyboardClose:(id)sender;        //  The Close Keyboard button
 
 @end
