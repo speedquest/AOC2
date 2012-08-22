@@ -24,14 +24,10 @@
     UISwipeGestureRecognizer *rightSwiper;
     UISwipeGestureRecognizer *leftSwiper;
     UIAlertView *swipeAlert;            //  The 'ALERT' when the wrong swipe is used
-    
-
-
 }
 
-
 //  Listening for the 'SAVE' button to be clicked
--(IBAction)onSaveEvent:(id)sender;;
+-(IBAction)onSaveEvent:(id)sender;
 
 
 @end
