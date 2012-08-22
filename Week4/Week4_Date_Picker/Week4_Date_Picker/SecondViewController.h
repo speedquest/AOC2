@@ -23,11 +23,19 @@
 
     IBOutlet UIDatePicker *datePicker;      //  The 'DATE PICKER' interface/button
     IBOutlet UITextField *toDoTextField;    //  The 'TEXT FIELD'
-    IBOutlet UIAlertView *alert;            //  The 'ALERT' when the text is missing
+    UIAlertView *alert;            //  The 'ALERT' when the text is missing
+    
     id <saveEventText> delegate;
     NSString *textOfDate;                   //  Variable to hold the date in a string form
     NSString *newToDo;                      //  Variable for presenting the date on the First Event page
     
+    //  The Label for the Swipe
+    IBOutlet UILabel *secondSwipeLabel;
+    
+    UISwipeGestureRecognizer *secondRightSwiper;
+    UISwipeGestureRecognizer *secondLeftSwiper;
+    UIAlertView *secondSwipeAlert;            //  The 'ALERT' when the wrong swipe is used
+
 }
 
 @property(nonatomic,strong) NSDate *minimumDate;  //  The minimum DATE for the Date Picker

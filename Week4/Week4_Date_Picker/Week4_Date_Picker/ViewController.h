@@ -15,17 +15,20 @@
 {
     //  This will display the list of events
     IBOutlet UITextView *toDoList;
+    
     //  The Label for the Swipe
     IBOutlet UILabel *swipeLabel;
     
     UISwipeGestureRecognizer *rightSwiper;
     UISwipeGestureRecognizer *leftSwiper;
-    IBOutlet UIAlertView *swipeAlert;            //  The 'ALERT' when the wrong swipe is used
+    UIAlertView *swipeAlert;            //  The 'ALERT' when the wrong swipe is used
+    
+
 
 }
 
-/*  REMOVED FOR WEEK 4
-//  Listening for the 'ADD EVENT' button to be clicked
+/*  UNCOMMENT FIRST!!!!
+//  Listening for the 'SAVE' button to be clicked
 -(IBAction)onClick:(id)sender;
 */
 

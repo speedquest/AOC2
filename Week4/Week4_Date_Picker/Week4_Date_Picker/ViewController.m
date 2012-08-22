@@ -27,7 +27,6 @@
 }
 */
 
-
 -(void)setToDo:(NSString *)theToDoString
 {
     toDoList.text = [toDoList.text stringByAppendingString:theToDoString];  //  Appending the string of the date
