@@ -35,6 +35,7 @@
 
 - (void)viewDidLoad
 {
+
     //  Establishing the rightSwiper
     rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe: )];
     rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
@@ -45,9 +46,28 @@
     leftSwiper.direction = UISwipeGestureRecognizerDirectionLeft;
     [swipeLabel addGestureRecognizer:leftSwiper];
     
-    [super viewDidLoad];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (defaults != nil)
+    {
+        NSString *theToDoString = [defaults objectForKey:@"theEvent"];
+        toDoList.text = theToDoString;
+    }
+
+        [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+-(IBAction)onSaveEvent:(id)sender
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (defaults != nil)
+    {
+        NSString *theToDoString = toDoList.text;
+        [defaults setObject:theToDoString forKey:@"theEvent"];
+        [defaults synchronize];
+    }
+}
+
 
 //  This will determine whether the swipe was LEFT or Right
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer

@@ -18,6 +18,8 @@
     
     //  The Label for the Swipe
     IBOutlet UILabel *swipeLabel;
+    //  The SAVE button
+    IBOutlet UIButton *saveEventToFile;
     
     UISwipeGestureRecognizer *rightSwiper;
     UISwipeGestureRecognizer *leftSwiper;
@@ -27,9 +29,9 @@
 
 }
 
-/*  UNCOMMENT FIRST!!!!
+
 //  Listening for the 'SAVE' button to be clicked
--(IBAction)onClick:(id)sender;
-*/
+-(IBAction)onSaveEvent:(id)sender;;
+
 
 @end
